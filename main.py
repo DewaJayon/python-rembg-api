@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"status": "ok"}
+    return {"status": "rembg API aktif"}
 
 @app.post("/remove-bg")
 async def remove_background(file: UploadFile = File(...)):
